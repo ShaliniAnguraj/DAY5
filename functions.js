@@ -120,9 +120,9 @@ var result = function(numArray){
 //ANONYMOUS FUNCTION :
 
 let Array = [1, 2, 3, 4, 5];
-let N = Array.length;
+let a = Array.length;
 let K = 2;
-var foo = function RightRotate(a, n, k){
+var foo = function RightRotate(a, k){
    k = k % n;
      for (let i = 0; i < n; i++) {
         if (i < k) {
@@ -133,7 +133,7 @@ var foo = function RightRotate(a, n, k){
             }
         }
 }
-  console.log(foo(Array, N, K));
+  console.log(foo(Array, K));
 
 //IIFE FUNCTION:
 ( function(a, n, k){
